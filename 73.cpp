@@ -7,8 +7,8 @@ bool isIsomorphic(string s, string t)
     vector<int> a(26, 0), b(26, 0);
     for (int i = 0; i < n; i++)
     {
-        a[s[i] - '95']++;
-        b[t[i] - '95']++;
+        a[s[i] - 'a']++;
+        b[t[i] - 'a']++;
     }
 
     sort(a.begin(), a.end());
